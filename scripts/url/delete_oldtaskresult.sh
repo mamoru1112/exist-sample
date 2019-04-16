@@ -10,4 +10,4 @@ QUERY='delete from django_celery_results_taskresult
             ) T3
         where django_celery_results_taskresult.id = T3.id
     );'
-/usr/bin/mysql -u${USER} -p${PASS} -D${DB} -e "${QUERY}"
+/usr/bin/mysql -hexist-mariadb -u${USER} -p${PASS} -D${DB} -e "${QUERY}"
